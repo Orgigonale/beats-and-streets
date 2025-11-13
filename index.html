@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats & Streets Heidelberg</title>
+    <link rel="stylesheet" href="projekt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="Logo Beats and streeets.jpg" alt="Beats & Streets Logo" class="logo">
+            </div>
+
+            <!-- Hamburger-Button -->
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#programm">Programm</a></li>
+                <li><a href="#lineup">Line-Up</a></li>
+                <li><a href="#orte">Ort</a></li>
+                <li><a href="#essen">Essen & Getränke</a></li>
+                <li><a href="#mitmachen">Mitmachen</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="overlay">
+            <img src="Logo Beats and streeets.jpg" alt="Beats & Streets Logo" class="hero-logo">
+            <h1>Beats & Streets</h1>
+            <p>Das Straßenfest in Heidelberg – Musik, Kultur & Community<br>an drei Tagen, drei Orten, mit unvergesslichen Momenten.</p>
+            <div class="hero-buttons">
+                <a href="#lineup" class="btn">Zum Line-Up</a>
+                <a href="#mitmachen" class="btn-outline">Mitmachen</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROGRAMM -->
+    <section id="programm">
+        <h2>Programm</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Freitag</h3>
+                <p>18:00 – 00:00 Uhr</p>
+                <ul>
+                    <li>Opening mit Live-Bands am Uniplatz</li>
+                    <li>Streetfood & Drinks</li>
+                    
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Samstag</h3>
+                <p>18:00 – 00:00 Uhr</p>
+                <ul>
+                    <li>DJ-Sets & Straßenperformances</li>
+                    <li>Streetfood & Drinks</li>
+                 
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Sonntag</h3>
+                <p>12:00 – 18:00 Uhr</p>
+                <ul>
+                    <li>Familienprogramm & Kinderlieder</li>
+                    <li>Streetfood & Drinks</li>
+                   
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINE-UP -->
+    <section id="lineup">
+        <h2>Line-Up</h2>
+
+        <div class="lineup-day">
+            <h3>Freitag</h3>
+            <div class="artist-grid">
+                <div class="artist-card" data-info="Indie-Rock mit sommerlicher Energie aus Mannheim.">The Riverside Beats</div>
+                <div class="artist-card" data-info="Soul & Funk mit starken Vocals und Straßen-Charme.">Luna & The Streetlights</div>
+                <div class="artist-card" data-info="Elektronische Beats und Visuals – perfekt für den Sonnenuntergang.">DJ Neutronix</div>
+                <div class="artist-card" data-info="Akustische Soul-Vibes mit Jazz-Einflüssen.">Soulwalkers</div>
+                <div class="artist-card" data-info="Junge Band aus Heidelberg mit urbanem Sound.">EchoVibe</div>
+                <div class="artist-card" data-info="Gemeinschaftsprojekt regionaler Musiker*innen – pure Energie.">Heidelbeats Collective</div>
+                <div class="artist-card" data-info="Singer-Songwriterin mit sanfter Stimme und ehrlichen Texten.">Mia Nova (Acoustic)</div>
+            </div>
+        </div>
+
+        <div class="lineup-day">
+            <h3>Samstag</h3>
+            <div class="artist-grid">
+                <div class="artist-card" data-info="Oldschool-HipHop und Funk – Vinyl only.">The Vinyl Crew</div>
+                <div class="artist-card" data-info="Brassband mit fettem Sound aus dem Rhein-Neckar-Gebiet.">Leo Brass Band</div>
+                <div class="artist-card" data-info="Female DJ mit housigen Grooves und Crowdfeeling.">DJ Nora K</div>
+                <div class="artist-card" data-info="Straßenjazz mit Improvisation – direkt aus der Altstadt.">Street Notes Trio</div>
+                <div class="artist-card" data-info="Synthpop trifft Straßenkunst.">SYNTHline</div>
+                <div class="artist-card" data-info="Freestyle-Beatboxer mit Loopstation.">Beatbox Ben</div>
+                <div class="artist-card" data-info="Soulige Stimme mit Akustikgitarre – handmade music.">Caro Blue</div>
+            </div>
+        </div>
+
+        <div class="lineup-day">
+            <h3>Sonntag (Family & Friends)</h3>
+            <div class="artist-grid">
+                <div class="artist-card" data-info="Kinderlieder mit Bewegung und Spaß.">Sunny Songs</div>
+                <div class="artist-card" data-info="Familienfreundliche Musik mit pädagogischem Touch.">Clara & die Klangfarben</div>
+                <div class="artist-card" data-info="Musikclown mit interaktiver Show.">Tommy Tamtam</div>
+                <div class="artist-card" data-info="Puppenspiel mit Musik – für Groß und Klein.">The Puppeteers</div>
+                <div class="artist-card" data-info="Kinderchor der Musikschule Heidelberg.">Kinderchor Heidelberg</div>
+                <div class="artist-card" data-info="Geschichten und Musikzelt für Kinder.">Lotta’s Geschichtenzelt</div>
+                <div class="artist-card" data-info="Offene Mitmachrunde mit Instrumenten.">Familienjam Session</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup -->
+    <div id="artist-popup" class="artist-popup">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <h3 id="popup-name"></h3>
+            <p id="popup-info"></p>
+        </div>
+    </div>
+
+    <!-- ORTE -->
+    <section id="orte">
+        <h2>Orte</h2>
+        <p>Das Straßenfest findet am zentralen Platz in Heidelberg statt – mit einzigartiger Atmosphäre an jeder Ecke.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Uniplatz</h3>
+                <p>Die Hauptbühne – Live-Musik, DJs und Opening-Acts ab Freitag 18 Uhr.</p>
+            </div>
+        </div>
+
+        <div id="map"></div>
+    </section>
+
+    <!-- ESSEN -->
+    <section id="essen">
+        <h2>Essen & Getränke</h2>
+        <p>In Kooperation mit Heidelberger Restaurants und Bars bringen wir lokale Küche auf die Straße – frisch, regional und nachhaltig.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Uniplatz</h3>
+                <p><strong>Restaurants und Bars:</strong> Coffee Nerd, red-die grüne Küche, Earth Bowls, Zeki´s Uni Cafe</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MITMACHEN -->
+    <section id="mitmachen">
+        <h2>Mitmachen</h2>
+        <p>Du bist Künstler*in, Foodie oder einfach begeistert? Dann melde dich und werde Teil von Beats & Streets oder hilf uns, es nächstes Mal noch unvergesslicher zu machen!</p>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" required>
+
+            <label for="vorschlag">Vorschlag (Künstler / Idee)</label>
+            <textarea id="vorschlag" rows="4" required></textarea>
+
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Beats & Streets Heidelberg</p>
+        <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+    </footer>
+
+    <!-- MAP SCRIPT -->
+    <script>
+        var map = L.map('map').setView([49.4106, 8.6947], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap Contributors'
+        }).addTo(map);
+
+        const locations = [
+            {name: "Uniplatz", coords:[49.4109, 8.7066], info: "Uniplatz – Hauptbühne"},
+        ];
+
+        locations.forEach(loc => {
+            L.marker(loc.coords).addTo(map).bindPopup(loc.info);
+        });
+    </script>
+
+    <!-- Hamburger JS -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
+    </script>
+
+    <!-- Artist Popup JS -->
+    <script>
+        const artistCards = document.querySelectorAll('.artist-card');
+        const popup = document.getElementById('artist-popup');
+        const popupName = document.getElementById('popup-name');
+        const popupInfo = document.getElementById('popup-info');
+        const closePopup = document.getElementById('close-popup');
+
+        artistCards.forEach(card => {
+            card.addEventListener('click', () => {
+                popupName.textContent = card.textContent;
+                popupInfo.textContent = card.dataset.info;
+                popup.style.display = 'flex';
+            });
+        });
+
+        closePopup.addEventListener('click', () => popup.style.display = 'none');
+        popup.addEventListener('click', e => {
+            if (e.target === popup) popup.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
